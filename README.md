@@ -3,6 +3,8 @@ A retriever in RAG is like a smart search helper. When you ask a question, the r
 
 🖼️ Diagram: Where the Retriever Fits in RAG
 
+
+
 User Question
       │
       ▼
