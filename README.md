@@ -4,18 +4,19 @@ A retriever in RAG is like a smart search helper. When you ask a question, the r
 🖼️ Diagram: Where the Retriever Fits in RAG
 
 
-
-User Question
-      │
-      ▼
- ┌─────────────┐
- │   Retriever │  ← searches your documents
- └─────────────┘
-      │  top-k relevant chunks
-      ▼
- ┌─────────────┐
- │     LLM     │  ← uses chunks + question
- └─────────────┘
-      │
-      ▼
-  Final Answer
+User Query
+    │
+    ▼
+ ┌─────────────────────┐
+ │     Retriever       │
+ │  (Semantic Search)  │
+ └─────────────────────┘
+    │  Top-k Chunks
+    ▼
+ ┌─────────────────────┐
+ │        LLM          │
+ │ (Generates Answer)  │
+ └─────────────────────┘
+    │
+    ▼
+ Final, Grounded Answer
